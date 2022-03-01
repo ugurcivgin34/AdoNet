@@ -100,7 +100,7 @@ namespace AdoNet
             SqlCommandBuilder scb = new SqlCommandBuilder(da);
 
             da.Update(dt);
-            dt.Rows[0].RowState = DataRowState.Deleted;
+            //dt.Rows[0].RowState = DataRowState.Deleted;
 
 
             dataGridView1.DataSource = dt;
